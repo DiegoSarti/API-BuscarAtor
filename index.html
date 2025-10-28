@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Busca de Filmes por Ator e Gênero</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎬 Busca de Filmes por Ator</h1>
+      <p>
+        Digite o nome de um ator ou atriz para ver seus filmes.<br>
+        Depois, use o filtro para mostrar apenas os filmes de um gênero específico.
+      </p>
+    </header>
+
+    <hr>
+
+    <!-- BUSCA POR ATOR -->
+    <section id="container-pesquisa-ator">
+      <h2>1️⃣ Buscar filmes por ator ou atriz</h2>
+      <div class="barra-pesquisa">
+        <input id="campo-busca-ator" type="text" placeholder="Ex.: Will Smith, Johnny Depp..." />
+        <button id="botao-buscar-ator">Buscar</button>
+      </div>
+      <p id="mensagem-status-ator" class="status"></p>
+    </section>
+
+    <hr>
+
+    <!-- FILTRO DE GÊNERO -->
+    <section id="container-filtro-genero">
+      <h2>2️⃣ Filtrar por gênero</h2>
+      <div class="barra-pesquisa">
+        <select id="select-genero">
+          <option value="">Todos os gêneros</option>
+          <option value="28">Ação</option>
+          <option value="12">Aventura</option>
+          <option value="16">Animação</option>
+          <option value="35">Comédia</option>
+          <option value="80">Crime</option>
+          <option value="99">Documentário</option>
+          <option value="18">Drama</option>
+          <option value="10751">Família</option>
+          <option value="14">Fantasia</option>
+          <option value="36">História</option>
+          <option value="27">Terror</option>
+          <option value="10402">Música</option>
+          <option value="9648">Mistério</option>
+          <option value="10749">Romance</option>
+          <option value="878">Ficção Científica</option>
+          <option value="10752">Guerra</option>
+          <option value="37">Faroeste</option>
+        </select>
+        <button id="botao-filtrar-genero">Filtrar</button>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- RESULTADOS -->
+    <section id="container-resultados">
+      <h2>3️⃣ Resultados</h2>
+      <div id="lista-resultados" class="grade"></div>
+    </section>
+
+    <hr>
+
+    <!-- PAGINAÇÃO -->
+    <section id="container-paginacao">
+      <h2>4️⃣ Navegar entre páginas</h2>
+      <div class="paginacao">
+        <button id="botao-anterior">◀ Anterior</button>
+        <button id="botao-proximo">Próxima ▶</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Aula Senac - Turma A</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
